@@ -9,9 +9,10 @@ public class Block {
     private final String previousHash;
     private final String timeStamp;
     private final Object data;
-    // Timestamp (time the Block was created) , previousHash
+    
+    // Timestamp (time the Block was created) , previousHash (hash of a previous block)
+    // Constructor for a standard block 
     public Block(String inPrevousHash, Object inData) {
-
         // Change the Object to fitting class when you figure out what it should be
         this.data         = inData;
         // Date the Block was created
@@ -19,6 +20,8 @@ public class Block {
         // String previousHash
         this.previousHash = inPrevousHash;
     }
+    // Constructor for a basic block
+
 
     // Change block into string of hash
     public String calculateHash() {
